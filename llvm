@@ -1,1 +1,9 @@
 
+REM 你可以把下面这段话存成一个 . bat 文件放在工具文件夹里
+@ echo off
+llama-cli.exe 
+	-m “C:\YourPath\model. gguf ” 
+	-ngl 99 
+	-c 8192 
+	-t 12 
+pause
