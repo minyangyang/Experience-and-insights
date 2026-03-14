@@ -7,3 +7,12 @@ llama-cli.exe
 	-c 8192 
 	-t 12 
 pause
+
+**********************************************************************************************
+如果在代码中出现 from llama import Llama，那么本文可以帮助你下载 llama 库
+
+git clone https://github.com/facebookresearch/llama.git 
+
+安装  进入到文件中，执行如下命令，安装对应的依赖项
+
+pip install -e . -i https://pypi.tuna.tsinghua.edu.cn/simple
