@@ -1,0 +1,17 @@
+//转换uncode的javascript
+javascript: (() => {
+  
+  let str = "那有什么神仙合剂[150ml/瓶]";
+  let unicodeStr = "";
+  for(let i=0;i<str.length;i++){
+    if(str.charCodeAt(i)>255){
+    unicodeStr+="__u"+str.charCodeAt(i).toString(16);
+    }else{unicodeStr+=str.charAt(i);        
+    }    
+    }
+  let newStr=unicodeStr.replace("[","%28");
+  let newStr1=newStr.replace("]","%29");
+
+alert(newStr1);
+  
+})();
